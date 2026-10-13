@@ -9,6 +9,6 @@ test('Post API Request Static', async ({ request }) => {
 
   const responseBody = await response.json();
   console.log('post response data: ', JSON.stringify(responseBody, null, 2));
-  expect(responseBody).toHaveProperty('id1');
+  expect(responseBody).toHaveProperty('id');
   expect(responseBody).toHaveProperty('createdAt');
 });
